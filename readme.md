@@ -13,15 +13,15 @@ https://www.apachefriends.org/download.html
 4 - No arquivo em pasta do xampp/apache/conf/extrahttpd-vhosts.conf adicionar, no final:
 
 <VirtualHost *:80>
-    DocumentRoot "F:/xampp8/htdocs"
-    ServerName site.leitorINPI
+DocumentRoot "F:/xampp8/htdocs"
+ServerName site.leitorINPI
 </VirtualHost>
 <VirtualHost *:443>
-    DocumentRoot "F:/xampp8/htdocs"
-    ServerName site.leitorINPI
-	SSLEngine on
-	SSLCertificateFile "conf/ssl.crt/server.crt"
-    SSLCertificateKeyFile "conf/ssl.key/server.key"
+DocumentRoot "F:/xampp8/htdocs"
+ServerName site.leitorINPI
+SSLEngine on
+SSLCertificateFile "conf/ssl.crt/server.crt"
+SSLCertificateKeyFile "conf/ssl.key/server.key"
 </VirtualHost>
 
 5 - No arquivo C:\Windows\System32\drivers\etc\hosts adicionar ao final (precisa permissão de administrador):
